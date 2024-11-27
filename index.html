@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steven Shyaka | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+                <a class="navbar-brand" 
+        href="index.html" 
+        style="
+            font-size: 2.5rem; 
+            font-weight: bold; 
+            color: #e6eaed; 
+            text-decoration: none; 
+            padding: 5px 10px; 
+            border-radius: 5px; 
+            transition: all 0.3s ease; 
+            background-color: transparent;
+            display: inline-block;
+        "
+        onmouseover="this.style.color='#0277BD'; this.style.backgroundColor='#e6eaed';" 
+        onmouseout="this.style.color='#e6eaed'; this.style.backgroundColor='transparent';"
+        >
+        Steve Tech
+        </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto justify-content-end">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <header class="text-center bg-light py-5">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Explore my skills, experience, and the projects I'm passionate about!</p>
+  </header>
+
+  <!-- Resume Summary Section -->
+  <section class="container my-5">
+    <h2 class="text-center">About Me</h2>
+    <p class="text-center">Hi, I'm <strong>Steven Shyaka</strong>, a passionate <strong>Frontend Developer</strong> and <strong>Machine Learning Enthusiast</strong>. With a strong background in software engineering, I am dedicated to solving global challenges through innovative technology. Currently, I’m exploring ways to integrate technology in healthcare, agriculture, and sustainability.</p>
+    <p class="text-center">Check out my skills, past projects, and achievements <a href="about.html">here</a>.</p>
+  </section>
+
+  <!-- Skills Overview -->
+  <section class="container my-5">
+    <h2 class="text-center">My Skills</h2>
+    <div class="row project-row">
+      <div class="project-card">
+        <h4>Frontend Development</h4>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React.js, Vue.js</li>
+          <li>Flutter for mobile apps</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <h4>Machine Learning</h4>
+        <ul>
+          <li>Python, NumPy, Pandas</li>
+          <li>TensorFlow, scikit-learn</li>
+          <li>Data Visualization</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <h4>Database Management</h4>
+        <ul>
+          <li>MySQL, MongoDB</li>
+          <li>SQL Queries, Database Design</li>
+          <li>Data Management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="container my-5">
+    <h2>My Projects</h2>
+    <div class="project-row">
+      <div class="project-card">
+        <img src="assets/images/predikta-thumbnail.jpg" alt="Predikta Project">
+        <h5>Predikta</h5>
+        <p>A machine learning-powered event prediction platform.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/farmed-thumbnail.png" alt="FarmEd Project">
+        <h5>FarmEd</h5>
+        <p>A mobile app for educating farmers with modern agricultural techniques.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/mhsp-thumbnail.jpg" alt="MHSP Project">
+        <h5>Mental Health Support Platform</h5>
+        <p>A web app designed to provide mental health resources.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container my-5">
+    <h2 class="text-center">Contact Me</h2>
+    <form action="submit_form.php" method="post">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-3">
+    <p>&copy; 2024 Steven Shyaka | All Rights Reserved</p>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
